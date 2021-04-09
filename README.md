@@ -18,7 +18,7 @@ pip install requests
 ```
 git clone https://github.com/meedan/metabasepy.git
 cd metabasepy
-python setup.py
+python setup.py install
 ```
 
 ## First example

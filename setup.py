@@ -4,7 +4,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="metabasepy-pkg-meedan", # Replace with your own username
+    name="metabasepy",
     version="0.0.1",
     author="Scott Hale",
     author_email="scott@meedan.com",
