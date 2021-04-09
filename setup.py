@@ -3,6 +3,9 @@ import setuptools
 with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
 
+with open('requirements.txt') as f:
+	reqs = f.read()
+    
 setuptools.setup(
     name="metabasepy",
     version="0.0.1",
@@ -20,7 +23,7 @@ setuptools.setup(
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
     ],
-    package_dir={"": "metabasepy"},
-    packages=setuptools.find_packages(where="metabasepy"),
-    python_requires=">=3.6",
+	install_requires=reqs.strip().split('\n'),
+	packages=setuptools.find_packages(),
+    python_requires=">=3.6"
 )
